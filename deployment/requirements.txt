@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+pandas
+pymongo
+python-dotenv
+pytest
+httpx
+joblib
+scikit-learn
+langchain-core
+azure-storage-blob
+azure-search-documents
+openai
+azure-storage-blob
+azure-search-documents
+openai
+gunicorn

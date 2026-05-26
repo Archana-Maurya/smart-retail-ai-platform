@@ -1,0 +1,5 @@
+AgentName,InsightType,Insight,Action
+Data Analyst Agent,Data Pipeline,"Superstore data is ingested, cleaned and stored for analytics.",Use curated data for business reporting.
+ML Expert Agent,Model Output,"Sales prediction uses Quantity, Discount and Profit as input features.",Monitor prediction error and improve model features.
+ML Expert Agent,Anomaly Detection,Isolation Forest detects unusual retail transactions.,Review high alert records for business risk.
+Document Assistant Agent,RAG Search,RAG vector search retrieves project knowledge and API details.,Use document search for quick project explanation.

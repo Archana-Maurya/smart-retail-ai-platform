@@ -1,0 +1,51 @@
+Smart Retail Assistant is an AI-based retail analytics project.
+
+The project is built for demand forecasting, customer question answering and anomaly detection.
+
+The dataset used in this project is the Superstore retail dataset.
+
+Important dataset columns include:
+Order Date, Ship Date, Ship Mode, Segment, Region, Category, Sub-Category, Sales, Quantity, Discount and Profit.
+
+Module A contains a FastAPI backend with four APIs:
+1. Data Ingestion
+2. ML Prediction
+3. Document Search
+4. Agent Interaction
+
+The Data Ingestion API reads the Superstore dataset, cleans the data, saves processed data and stores records in MongoDB.
+
+The ML Prediction API uses a trained Random Forest Regression model.
+
+The regression model predicts Sales using three input features:
+Quantity, Discount and Profit.
+
+The saved regression model file is:
+models/superstore_pipeline_model.pkl
+
+The anomaly detection module uses Isolation Forest.
+
+The anomaly detection model uses:
+Sales, Quantity, Discount and Profit.
+
+The saved anomaly model file is:
+models/anomaly_detection_model.pkl
+
+The Document Search API uses RAG and vector search to find relevant project information.
+
+The Agent Interaction API uses LangChain-style agents with MCP-style JSON communication.
+
+There are three agents:
+1. Data Analyst Agent
+2. Document Assistant Agent
+3. ML Expert Agent
+
+The Data Analyst Agent answers questions about dataset, MongoDB and data pipeline.
+
+The Document Assistant Agent answers questions about project documentation, APIs and system overview.
+
+The ML Expert Agent answers questions about model training, prediction, evaluation and anomaly detection.
+
+MCP-style communication means every agent message follows a structured JSON format with sender, receiver, message type and content.
+
+This project keeps the architecture simple, clean and beginner-friendly.
